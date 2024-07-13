@@ -36,8 +36,11 @@
     opacity: 1;
 }
 
-.page-loading.active > .page-loading-inner .img {
+img {
     display: inline !important;
+    width: 50px; 
+    height: 50;
+    margin-bottom: 10px;
 }
 
 .page-loading-inner > span {
