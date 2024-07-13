@@ -6,55 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Szeccsa l0ader</title>
 
-        <!-- Put the style before any other stylesheet and javascript! -->
-        <style>
-            .page-loading {
-                position: fixed;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                -webkit-transition: all .4s .2s ease-in-out;
-                transition: all .4s .2s ease-in-out;
-                background-color: #fff;
-                opacity: 0;
-                visibility: hidden;
-                z-index: 9999;
-            }
-            .page-loading.active {
-                opacity: 1;
-                visibility: visible;
-            }
-            .page-loading-inner {
-                position: absolute;
-                top: 50%;
-                left: 0;
-                width: 100%;
-                text-align: center;
-                -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-                -webkit-transition: opacity .2s ease-in-out;
-                transition: opacity .2s ease-in-out;
-                opacity: 0;
-            }
-            .page-loading.active > .page-loading-inner {
-                opacity: 1;
-            }
-            .page-loading-inner > span {
-                display: block;
-                font-family: "Inter", sans-serif;
-                font-size: 1rem;
-                font-weight: normal;
-                color: #000;
-            }
-        </style>
+        <link rel="stylesheet" href="https://github.com/Szeccsa/l0ader/assets/css/style.css">
 
         <script>
             (function () {
                 window.onload = function () {
-                const preloader = document.querySelector('.page-loading')
+                const preloader = document.querySelector('.szeccsa-loader')
                 preloader.classList.remove('active')
                 setTimeout(function () {
                     preloader.remove()
@@ -63,12 +20,11 @@
             })()
         </script>
 
-        <!-- Put all of your stylesheets and javascripts below! -->
     </head>
     <body>
-        <div class="page-loading active">
-            <div class="page-loading-inner">
-                <img src="/assets/i/loading.gif" alt="Loading" title="Loading..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
+        <div class="szeccsa-loader active">
+            <div class="szeccsa-loader-inner">
+                <img src="/assets/i/loading.gif" alt="Animation" title="Loading..." draggable="false" width="50" height="50" style="margin-bottom: 10px;">
                 <span id="loading-message"></span>
             </div>
         </div>
@@ -93,7 +49,7 @@
 
             (function () {
                 window.onload = function () {
-                    const preloader = document.querySelector('.page-loading');
+                    const preloader = document.querySelector('.szeccsa-loader');
                     preloader.classList.remove('active');
                     setTimeout(function () {
                         preloader.remove();
