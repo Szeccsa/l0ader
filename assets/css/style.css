@@ -1,4 +1,4 @@
-.szeccsa-loader {
+.page-loading {
     position: fixed;
     top: 0;
     right: 0;
@@ -13,11 +13,11 @@
     visibility: hidden;
     z-index: 9999;
 }
-.szeccsa-loader.active {
+.page-loading.active {
     opacity: 1;
     visibility: visible;
 }
-.szeccsa-loader-inner {
+.page-loading-inner {
     position: absolute;
     top: 50%;
     left: 0;
@@ -29,13 +29,13 @@
     transition: opacity .2s ease-in-out;
     opacity: 0;
 }
-.szeccsa-loader.active > .szeccsa-loader-inner {
+.page-loading.active > .page-loading-inner {
     opacity: 1;
 }
-.szeccsa-loader > span {
+.page-loading-inner > span {
     display: block;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: normal;
-    color: #FFF;
+    color: #fff;
 }
