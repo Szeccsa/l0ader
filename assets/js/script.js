@@ -1,4 +1,3 @@
-
 const sentences = [
     "Hang tight! We're loading the page.",
     "Loading, please be patient...",
